@@ -50,15 +50,16 @@ class MainActivity : AppCompatActivity() {
         carpmaButton.setOnClickListener {
             val number = editText.text.toString().toIntOrNull()
             val number2 = editText2.text.toString().toIntOrNull()
-            if( number != null && number2 !=null){
+            if (number != null && number2 != null) {
                 val result = (number * number2)
 
                 textView.text = "Result : $result"
 
-            }else{
+            } else {
                 textView.text = "Lütfen sayi giriniz"
             }
 
+        }
             bolmeButton.setOnClickListener {
                 val number = editText.text.toString().toIntOrNull()
                 val number2 = editText2.text.toString().toIntOrNull()
@@ -71,17 +72,15 @@ class MainActivity : AppCompatActivity() {
                     textView.text = "Lütfen sayi giriniz"
                 }
             }
-            clearButton.setOnClickListener {
+        clearButton.setOnClickListener {
 
 
-                textView.text = ""
+            textView.text = "Result : "
+        }
 
-
-            }
         }
 
 
 
 
     }
-}
